@@ -1,0 +1,16 @@
+#plug in the border router dongle
+
+#connect the border router
+make TARGET=nrf52840 BOARD=dongle PORT=/dev/ttyACM0 connect-router
+
+#plug the sensor and actuator dongles
+!check ttyACM port
+to connect the serial port:
+make login PORT=/dev/ttyACM1x
+
+
+#run the cloud application:
+cd Iot_project/src/cloud_app
+python3 main.py
+
+

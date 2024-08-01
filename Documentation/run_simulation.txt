@@ -1,0 +1,13 @@
+#start cooja:
+cd contiki-ng/tools/cooja
+./gradlew run
+
+#setup border router connection:
+cd Iot_project/src/rpl-border-router
+make TARGET=cooja connect-router-cooja
+
+#run the cloud application:
+cd Iot_project/src/cloud_app
+python3 main.py
+
+
