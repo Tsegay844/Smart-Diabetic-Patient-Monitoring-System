@@ -1,0 +1,1 @@
+This project developed a Smart Diabetic Monitoring and Controlling System. The system enables continuous monitoring of glucose levels, heart rate, and blood pressure. It manages insulin and glucagon pumps and triggers emergency alerts. Using the Nordic nRF52840 and Contiki-NG OS, and reliable communication via MQTT and COAP protocols.
